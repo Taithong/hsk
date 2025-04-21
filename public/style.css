@@ -1,0 +1,70 @@
+body {
+  font-family: 'Noto Sans Lao', sans-serif;
+  padding: 20px;
+}
+
+button {
+  margin: 5px;
+}
+
+.card-panel {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  display: flex;
+  flex-wrap: wrap;  /* เพิ่ม flex-wrap เพื่อให้คำไปอยู่แถวใหม่ */
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.word-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 45%;  /* ให้คำแต่ละคำมีความกว้าง 45% */
+}
+
+.word-item .char, .word-item .pinyin {
+  margin: 0 10px;
+}
+
+.word-item .char {
+  font-size: 30px;
+}
+
+.word-item .pinyin {
+  font-size: 20px;
+  color: #757575;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .word-item .char {
+    font-size: 24px;
+  }
+
+  .word-item .pinyin {
+    font-size: 16px;
+  }
+
+  .word-item {
+    width: 100%;  /* ให้คำแสดงเต็มแถว */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .word-item .char {
+    font-size: 20px;
+  }
+
+  .word-item .pinyin {
+    font-size: 14px;
+  }
+}

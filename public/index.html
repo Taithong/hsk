@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Chinese Words</title>
+
+  <!-- Google Fonts: Noto Sans Lao -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS (Material Design Framework) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="grey lighten-4">
+
+  <div class="container">
+    <h4 class="center-align">ສຸ່ມຄຳພາສາຈີນ 🈶</h4>
+
+    <div style="margin-top: 20px;">
+      <button class="btn waves-effect waves-light" onclick="showRandomWords('all')">แสดงทั้งหมด</button>
+      <button class="btn waves-effect waves-light" onclick="showRandomWords('character')">เฉพาะตัวอักษร</button>
+      <button class="btn waves-effect waves-light" onclick="showRandomWords('pinyin')">เฉพาะ Pinyin</button>
+    </div>
+
+    <div id="result" class="card-panel center-align" style="margin-top: 3rem;">
+      <!-- ผลลัพธ์จะแสดงที่นี่ -->
+    </div>
+  </div>
+
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
