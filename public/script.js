@@ -1,5 +1,5 @@
 function showRandomWords(type) {
-  const selectedWords = getRandomItems(words, 5);
+  const selectedWords = getRandomItems(words, 6);
 
   const resultEl = document.getElementById('result');
   resultEl.innerHTML = '';  // ลบคำที่แสดงก่อนหน้านี้
